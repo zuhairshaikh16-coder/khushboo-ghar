@@ -1,4 +1,6 @@
 import React from 'react';
+import whiteMuskImage from './assets/images/product_white_musk_1793948058935.jpg';
+import umrahKitImage from './assets/images/product_umrah_kit_1793948059954.jpg';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CategoryFilter } from './components/CategoryFilter';
@@ -274,7 +276,7 @@ export default function App() {
               <div className="lg:col-span-6 grid grid-cols-2 gap-4">
                 <div className="rounded-lg overflow-hidden border border-stone-300 shadow-md bg-stone-100 aspect-square">
                   <img
-                    src="/src/assets/images/product_white_musk_1793948058935.jpg"
+                    src={whiteMuskImage}
                     alt="Misk Taharah white musk"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
@@ -282,7 +284,7 @@ export default function App() {
                 </div>
                 <div className="rounded-lg overflow-hidden border border-stone-300 shadow-md bg-stone-100 aspect-square mt-6">
                   <img
-                    src="/src/assets/images/product_umrah_kit_1793948059954.jpg"
+                    src={umrahKitImage}
                     alt="Umrah pilgrimage travel kit"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
