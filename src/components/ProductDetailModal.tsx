@@ -43,12 +43,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
       >
         {/* Close Button */}
         <button
-          onClick={onClose}
-          className="absolute top-3 right-3 z-10 p-2 text-stone-500 hover:text-stone-900 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors cursor-pointer"
-          aria-label="Close dialog"
-        >
-          <X className="w-5 h-5" />
-        </button>
+  onClick={onClose}
+  className="fixed top-4 right-4 z-[60] p-3 text-stone-900 bg-white rounded-full shadow-xl border border-stone-300 hover:bg-stone-100 transition-colors cursor-pointer"
+  aria-label="Close product details"
+  type="button"
+>
+  <X className="w-6 h-6" />
+</button>
 
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Product Image Column */}
