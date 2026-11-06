@@ -1,4 +1,9 @@
 import { Product } from '../types';
+import royalOudhImage from '../assets/images/product_royal_oudh_1793948059199.jpg';
+import whiteMuskImage from '../assets/images/product_white_musk_1793948058935.jpg';
+import heroAttarImage from '../assets/images/hero_attar_perfume_1793948058716.jpg';
+import umrahKitImage from '../assets/images/product_umrah_kit_1793948059954.jpg';
+import janamazImage from '../assets/images/product_turkish_janamaz_1793948060299.jpg';
 
 export const PRODUCTS: Product[] = [
   // --- ORGANIC ATTARS ---
@@ -15,7 +20,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 142,
     shortDescription: 'Distilled aged Cambodian agarwood oil with deep balsamic smoke and sweetened wood nuances.',
     description: 'An exquisite vintage attar slow-distilled from heartwood agarwood trees. Free from synthetics, DPG, or alcohol. Matures beautifully over hours with warm leather, honeyed resin, and deep meditative woods that linger for over 24 hours on fabrics.',
-    image: '/src/assets/images/product_royal_oudh_1793948059199.jpg',
+    image: royalOudhImage,
     sizes: [
       { label: '3ml (1/4 Tola)', price: 3600, volume: '3ml' },
       { label: '6ml (1/2 Tola)', price: 6800, volume: '6ml' },
@@ -45,7 +50,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 318,
     shortDescription: 'Thick, creamy royal white musk with gentle powdery florals. The classic Sunnah hygiene fragrance.',
     description: 'Prized for centuries for personal purity and wudu routine. Its rich, velvety texture delivers an angelic, clean scent of crushed white petals, powdery softness, and subtle sweet vanilla musk. 100% alcohol-free and soothing for direct skin application.',
-    image: '/src/assets/images/product_white_musk_1793948058935.jpg',
+    image: whiteMuskImage,
     sizes: [
       { label: '6ml (Roll-on Glass)', price: 2400, volume: '6ml' },
       { label: '12ml (With Glass Wand Applicator)', price: 4200, volume: '12ml' },
@@ -75,7 +80,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 89,
     shortDescription: 'Freshly harvested mountain roses from Taif, Saudi Arabia with sparkling citrus honey notes.',
     description: 'Steam hydro-distilled from tens of thousands of pink Taif damask rose petals handpicked before dawn in the mountains of Saudi Arabia. Possesses an intoxicating natural depth that is dewy, green, tea-like, and richly sweet without synthetic additives.',
-    image: '/src/assets/images/hero_attar_perfume_1793948058716.jpg',
+    image: heroAttarImage,
     sizes: [
       { label: '3ml (Tester Vial)', price: 2900, volume: '3ml' },
       { label: '6ml (Half Tola)', price: 5200, volume: '6ml' },
@@ -105,7 +110,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 76,
     shortDescription: 'Traditional Deg-Bhapka hydro-distillation of over 40 Himalayan herbs, roots, saffron, and Mysore sandalwood.',
     description: 'An ancient heritage formula distilled into pure sandalwood oil over 30 days of continuous wood fire. Warm, spicy, earthy, and profoundly calming for prayer, meditation, and cold evenings. Revered as the quintessential natural oriental attar.',
-    image: '/src/assets/images/product_royal_oudh_1793948059199.jpg',
+    image: royalOudhImage,
     sizes: [
       { label: '6ml (Half Tola)', price: 4400, volume: '6ml' },
       { label: '12ml (1 Tola)', price: 7900, volume: '12ml' },
@@ -134,7 +139,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 114,
     shortDescription: '100% Pure Santalum Album heartwood oil. Silky smooth, buttery, meditative and grounding.',
     description: 'Distilled from seasoned rootwood, yielding an unmatched creamy woody sweetness that calms the nervous system and enhances focus during prayer and Quran recitation. A timeless classic mentioned in classic medical and spiritual treatises.',
-    image: '/src/assets/images/hero_attar_perfume_1793948058716.jpg',
+    image: heroAttarImage,
     sizes: [
       { label: '6ml (Half Tola)', price: 4900, volume: '6ml' },
       { label: '12ml (1 Tola)', price: 8900, volume: '12ml' },
@@ -163,7 +168,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 205,
     shortDescription: 'Vibrant green heavenly bouquet with wild mint, lotus blossom, musk, and spicy cinnamon bark.',
     description: 'The legendary "Garden of Paradise" scent reimagined with strictly botanical essential oils. Refreshingly green, uplifting, and spiritually revitalizing. Ideal for Jummah prayers and warm weather days.',
-    image: '/src/assets/images/product_white_musk_1793948058935.jpg',
+    image: whiteMuskImage,
     sizes: [
       { label: '6ml (Roll-on)', price: 3200, volume: '6ml' },
       { label: '12ml (Crystal Bottle)', price: 5800, volume: '12ml' },
@@ -194,7 +199,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 167,
     shortDescription: '100% Unscented & Halal certified kit compliant with Ihram state restrictions during Tawaf and Sa’i.',
     description: 'Everything a Muhrim needs in the state of Ihram where scented cosmetics are strictly forbidden. Contains: 2x 100g Fragrance-Free Cold-Pressed Olive Soap, 1x 100ml Unscented Organic Moisturizing Lotion (prevents skin chafing during Tawaf), 1x Natural Miswak with bamboo case, 1x Compact Pocket Prayer Mat, and 1x 33-Bead Olive Wood Tawaf Tasbih.',
-    image: '/src/assets/images/product_umrah_kit_1793948059954.jpg',
+    image: umrahKitImage,
     sizes: [
       { label: 'Standard Pilgrim Kit', price: 4500, volume: '5-Piece Set' },
       { label: 'Deluxe Kit (+ Microfiber Towel & Pouch)', price: 7200, volume: '7-Piece Set' },
@@ -224,7 +229,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 94,
     shortDescription: 'Pure goat milk & extra virgin olive oil bar with deep moisturizing skin protectant balm.',
     description: 'Specially formulated for pilgrims performing Umrah and Hajj. Zero artificial fragrances, no masking chemicals, no animal cruelty. Protects the skin against harsh desert winds and prevents chafing between thighs during the 7 rounds of Tawaf and Saee.',
-    image: '/src/assets/images/product_umrah_kit_1793948059954.jpg',
+    image: umrahKitImage,
     sizes: [
       { label: 'Soap Bar (120g) + Balm (60ml)', price: 1800, volume: '2 Items' },
       { label: 'Family Pack (3x Soaps + 2x Balms)', price: 4200, volume: '5 Items' },
@@ -251,7 +256,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 188,
     shortDescription: 'Ergonomic silicone finger counter with LED backlight for night Tawaf and vibrating lap alerts.',
     description: 'Never lose count of your Tawaf or Sa’i circuits again amidst the crowd in Masjid Al-Haram. Fits snugly on your index finger with a soft silicone strap, large tactile count button, silent click mechanism, and subtle vibration every 7 counts.',
-    image: '/src/assets/images/product_umrah_kit_1793948059954.jpg',
+    image: umrahKitImage,
     sizes: [
       { label: 'Matte Emerald Green', price: 1950, volume: '1 Piece' },
       { label: 'Obsidian Black', price: 1950, volume: '1 Piece' },
@@ -282,7 +287,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 230,
     shortDescription: 'High-density Turkish micro-velvet prayer rug with double-layer orthopedic memory cushioning.',
     description: 'Crafted on historic looms in Bursa, Turkey. Features a magnificent Mihrab arch motif woven with deep emerald green and metallic golden threads. The 15mm thick memory foam layer provides effortless knee and joint comfort during extended Sajdah and Tahajjud prayers.',
-    image: '/src/assets/images/product_turkish_janamaz_1793948060299.jpg',
+    image: janamazImage,
     sizes: [
       { label: 'Standard (75 x 120 cm)', price: 5800, volume: 'Standard' },
       { label: 'Extra Wide Orthopedic (85 x 135 cm)', price: 7900, volume: 'Large' },
@@ -309,7 +314,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 156,
     shortDescription: 'Turned from aged Palestinian olive wood with natural grain veins and hand-tied silk tassel.',
     description: 'Each bead is individually turned and polished using organic beeswax, releasing a faint honey-olive aroma as you make Dhikr. Threaded on high-tensile braided military cord that will never snap during daily usage.',
-    image: '/src/assets/images/product_umrah_kit_1793948059954.jpg',
+    image: umrahKitImage,
     sizes: [
       { label: '33 Beads (Pocket Size 8mm)', price: 1400, volume: '33 Beads' },
       { label: '99 Beads (Classic Size 8mm)', price: 2200, volume: '99 Beads' },
@@ -337,7 +342,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 88,
     shortDescription: 'Heavy solid brass engraved incense burner with 30g Indonesian agarwood chips and brass tongs.',
     description: 'Fill your home with the venerable fragrance of the Prophet’s Mosque before Jummah and family gatherings. Contains a heat-dissipating solid brass burner with pierced dome lid, stainless tongs, quick-light coconut charcoals, and premium grade agarwood chips.',
-    image: '/src/assets/images/hero_attar_perfume_1793948058716.jpg',
+    image: heroAttarImage,
     sizes: [
       { label: 'Burner + 30g Oud Chips + Tongs', price: 4900, volume: 'Complete Set' },
       { label: 'Deluxe Set (+ 60g Reserve Bakhoor)', price: 7500, volume: 'Gift Box' },
@@ -363,7 +368,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 112,
     shortDescription: 'Fresh vacuum-sealed Arak tree roots with a ventilated brass travel capsule.',
     description: 'Revive the Sunnah of dental cleanliness. Harvested fresh from Salvadora Persica trees with active natural fluorides, silica, and antibacterial resins. Keeps your miswak moist, hygienic, and ready for prayer in your pocket.',
-    image: '/src/assets/images/product_umrah_kit_1793948059954.jpg',
+    image: umrahKitImage,
     sizes: [
       { label: 'Brass Holder + 3x Vacuum Miswaks', price: 1600, volume: '1 Set' },
       { label: 'Pocket Bamboo Holder + 5x Miswaks', price: 2100, volume: '1 Set' },

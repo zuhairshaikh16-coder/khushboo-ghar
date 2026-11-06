@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImage from '../assets/images/hero_attar_perfume_1793948058716.jpg';
 import { Sparkles, ArrowRight, ShieldCheck, HeartHandshake, CheckCircle2 } from 'lucide-react';
 import { WHATSAPP_DISPLAY_PHONE } from '../utils/whatsapp';
 
@@ -76,7 +77,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuiz, onExplore }) => {
             <div className="relative rounded-lg overflow-hidden border border-[#c59b27]/30 shadow-2xl bg-stone-900 group">
               <div className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-square relative overflow-hidden bg-stone-900">
                 <img
-                  src="/src/assets/images/hero_attar_perfume_1793948058716.jpg"
+                 src={heroImage}
                   alt="Khushboo Ghar artisanal crystal attar bottles, agarwood chips, and fresh taif rose petals"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
