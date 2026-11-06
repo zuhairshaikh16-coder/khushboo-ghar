@@ -1,12 +1,12 @@
+
 import React from 'react';
-import { ShoppingBag, Sparkles, Download, MessageCircle, Menu, X } from 'lucide-react';
+import { ShoppingBag, Sparkles, MessageCircle, Menu, X } from 'lucide-react';
 import { WHATSAPP_DISPLAY_PHONE, getGeneralWhatsAppUrl } from '../utils/whatsapp';
 
 interface NavbarProps {
   cartCount: number;
   onOpenCart: () => void;
   onOpenQuiz: () => void;
-  onOpenZipModal: () => void;
   activeCategory: string;
   onSelectCategory: (cat: string) => void;
 }
@@ -15,7 +15,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   cartCount,
   onOpenCart,
   onOpenQuiz,
-  onOpenZipModal,
   onSelectCategory,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -115,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </nav>
 
-          {/* Zone 3: 1 primary action + Cart & ZIP */}
+          {/* Zone 3: 1 primary action + Cart */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Scent Quiz pill trigger */}
             <button
@@ -125,16 +124,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Sparkles className="w-3.5 h-3.5 text-[#c59b27]" />
               <span className="whitespace-nowrap">Find Scent</span>
-            </button>
-
-            {/* Download Code ZIP button */}
-            <button
-              onClick={onOpenZipModal}
-              className="hidden md:flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-stone-700 hover:text-stone-900 bg-stone-100 hover:bg-stone-200/80 border border-stone-200 rounded-md transition-colors cursor-pointer"
-              title="Download clean project source ZIP for self-hosting"
-            >
-              <Download className="w-3.5 h-3.5 text-stone-600" />
-              <span className="whitespace-nowrap">Export ZIP</span>
             </button>
 
             {/* Shopping Bag Button */}
@@ -201,16 +190,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <Sparkles className="w-4 h-4 text-[#c59b27]" />
                 Virtual Scent Matching Quiz
-              </button>
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenZipModal();
-                }}
-                className="w-full flex items-center justify-center gap-2 py-2 px-3 text-sm font-medium text-stone-700 bg-stone-100 rounded-md"
-              >
-                <Download className="w-4 h-4" />
-                Download Website Code (.ZIP)
               </button>
             </div>
           </div>

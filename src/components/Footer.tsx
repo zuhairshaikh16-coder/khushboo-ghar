@@ -1,17 +1,16 @@
+
 import React from 'react';
-import { MessageCircle, ShieldCheck, HeartHandshake, Sparkles, Download, Phone, MapPin } from 'lucide-react';
+import { MessageCircle, ShieldCheck, HeartHandshake, Sparkles, Phone, MapPin } from 'lucide-react';
 import { WHATSAPP_DISPLAY_PHONE, getGeneralWhatsAppUrl } from '../utils/whatsapp';
 
 interface FooterProps {
   onSelectCategory: (cat: string) => void;
   onOpenQuiz: () => void;
-  onOpenZipModal: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onSelectCategory,
   onOpenQuiz,
-  onOpenZipModal,
 }) => {
   return (
     <footer className="bg-[#03211a] text-stone-300 border-t border-[#0d4536] relative overflow-hidden">
@@ -143,7 +142,7 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Interactive Tools & Export */}
+          {/* Interactive Tools */}
           <div className="md:col-span-4 space-y-3">
             <h4 className="font-bold text-white text-xs uppercase tracking-wider text-[#dfb746]">
               Customer Services
@@ -158,17 +157,6 @@ export const Footer: React.FC<FooterProps> = ({
                   <span>Virtual Scent Matching Quiz</span>
                 </div>
                 <span>Start →</span>
-              </button>
-
-              <button
-                onClick={onOpenZipModal}
-                className="w-full flex items-center justify-between p-2.5 bg-stone-900 hover:bg-stone-800 border border-stone-700 rounded-md text-xs font-medium text-stone-300 hover:text-white transition-colors cursor-pointer"
-              >
-                <div className="flex items-center gap-2">
-                  <Download className="w-4 h-4 text-[#dfb746]" />
-                  <span>Download Project Source (.ZIP)</span>
-                </div>
-                <span>Export</span>
               </button>
 
               <a

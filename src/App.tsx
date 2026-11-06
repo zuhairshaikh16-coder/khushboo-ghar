@@ -1,3 +1,4 @@
+
 import React from 'react';
 import whiteMuskImage from './assets/images/product_white_musk_1793948058935.jpg';
 import umrahKitImage from './assets/images/product_umrah_kit_1793948059954.jpg';
@@ -9,11 +10,10 @@ import { ProductDetailModal } from './components/ProductDetailModal';
 import { ScentQuizModal } from './components/ScentQuizModal';
 import { CartDrawer } from './components/CartDrawer';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
-import { ZipDownloadModal } from './components/ZipDownloadModal';
 import { Footer } from './components/Footer';
 import { PRODUCTS } from './data/products';
 import { CartItem, Product } from './types';
-import { Sparkles, ShieldCheck, HeartHandshake, CheckCircle2, MessageCircle, ShoppingBag, Compass } from 'lucide-react';
+import { Sparkles, CheckCircle2, MessageCircle, ShoppingBag, Compass } from 'lucide-react';
 import { WHATSAPP_DISPLAY_PHONE, getGeneralWhatsAppUrl } from './utils/whatsapp';
 
 export default function App() {
@@ -28,7 +28,6 @@ export default function App() {
 
   const [isCartOpen, setIsCartOpen] = React.useState(false);
   const [isQuizOpen, setIsQuizOpen] = React.useState(false);
-  const [isZipModalOpen, setIsZipModalOpen] = React.useState(false);
   const [activeProduct, setActiveProduct] = React.useState<Product | null>(null);
 
   const [selectedCategory, setSelectedCategory] = React.useState<string>('all');
@@ -135,7 +134,6 @@ export default function App() {
         cartCount={totalCartCount}
         onOpenCart={() => setIsCartOpen(true)}
         onOpenQuiz={() => setIsQuizOpen(true)}
-        onOpenZipModal={() => setIsZipModalOpen(true)}
         activeCategory={selectedCategory}
         onSelectCategory={(cat) => setSelectedCategory(cat)}
       />
@@ -151,7 +149,7 @@ export default function App() {
         {/* Featured Collection & Catalog */}
         <section id="catalog-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="space-y-6">
-            
+
             {/* Header Title with Editorial numbering */}
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-stone-200 pb-5">
               <div>
@@ -226,7 +224,7 @@ export default function App() {
         <section className="bg-[#f4efe8] border-y border-stone-200 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               <div className="lg:col-span-6 space-y-5 text-left">
                 <span className="text-xs uppercase tracking-widest font-semibold text-[#c59b27]">
                   02. The Sacred Tradition
@@ -329,7 +327,6 @@ export default function App() {
           scrollToCatalog();
         }}
         onOpenQuiz={() => setIsQuizOpen(true)}
-        onOpenZipModal={() => setIsZipModalOpen(true)}
       />
 
       {/* Modals & Overlays */}
@@ -357,11 +354,6 @@ export default function App() {
           setSelectedCategory('all');
           scrollToCatalog();
         }}
-      />
-
-      <ZipDownloadModal
-        isOpen={isZipModalOpen}
-        onClose={() => setIsZipModalOpen(false)}
       />
 
       {/* Floating WhatsApp chat shortcut button */}
