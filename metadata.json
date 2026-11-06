@@ -1,0 +1,6 @@
+{
+  "name": "Khushboo Ghar - Organic Attars & Islamic Essentials",
+  "description": "Pure organic artisanal attars, Umrah & Hajj essentials, and Islamic lifestyle collection with virtual scent matching quiz and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
